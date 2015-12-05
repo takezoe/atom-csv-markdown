@@ -1,9 +1,10 @@
 {
   "name": "atom-csv-markdown",
   "main": "./lib/atom-csv-markdown",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A short description of your package",
   "keywords": [
+    "Markdown"
   ],
   "activationCommands": {
     "atom-workspace": "atom-csv-markdown:convertCsvToMarkdownTable"
