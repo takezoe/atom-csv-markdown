@@ -1,0 +1,8 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Convert CSV to Markdown table'
+      'command': 'atom-csv-markdown:convertCsvToMarkdownTable'
+    }
+  ]
