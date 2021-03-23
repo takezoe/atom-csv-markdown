@@ -10,10 +10,11 @@ module.exports =
       width = []
       for line, i in csv.data
         for element, j in line
+          value = element.trim()
           if width.length <= j
-            width[j] = if element.length < 4 then 4 else element.length
-          else if width[j] < element.length
-            width[j] = element.length
+            width[j] = if value.length < 4 then 4 else value.length
+          else if width[j] < value.length
+            width[j] = value.length
       
       # Build table
       table = ""
@@ -21,9 +22,10 @@ module.exports =
         if line.length == 1 && line[0].trim() == ""
           continue
         for element, j in line
-          table = table + "|" + element.trim()
-          if element.length < width[j]
-            for k in [0 ... width[j] - element.trim().length]
+          value = element.trim()
+          table = table + "|" + value
+          if value.length < width[j]
+            for k in [0 ... width[j] - value.length]
               table = table + " "
         table = table + "|\n"
         if i == 0

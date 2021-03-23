@@ -1,7 +1,7 @@
 {
   "name": "atom-csv-markdown",
   "main": "./lib/atom-csv-markdown",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Convert CSV text to Markdown table",
   "keywords": [
     "Markdown"
